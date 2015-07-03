@@ -28,4 +28,4 @@
 *.app
 
 # Apple OS X Nonsense
-.ds_store
+.DS_Store
