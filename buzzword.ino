@@ -100,12 +100,6 @@ boolean CountDownTimer()
   return !Stop; // return the state of the timer
 }
 
-void ResetTimer()
-{
-  SetTimer(0,0,15);
-  Stop = false;
-}
-
 void StartTimer()
 {
   Watch = micros(); // get the initial microseconds at the start of the timer
@@ -124,6 +118,7 @@ void SetTimer(unsigned int hours, unsigned int minutes, unsigned int seconds)
   R_clock = Clock;
   // Intentionally commented out - want to start the timer as a separate function
   // Stop = false;
+  time = micros();
 }
 
 boolean TimeHasChanged()
@@ -181,7 +176,7 @@ void drawTimer()
 
 void startGame()
 {
-  SetTimer(0,0,63);
+  SetTimer(0,0,60);
   score = 0;
   Tft.fillScreen();
   drawScore();
