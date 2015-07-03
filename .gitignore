@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# Apple OS X Nonsense
+.ds_store
