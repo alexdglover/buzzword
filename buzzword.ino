@@ -32,7 +32,7 @@ boolean Reset = false, Stop = false, Paused = false;
 volatile boolean timeFlag = false;
 
 //List of 'buzzwords' and the current 'buzzword'
-char* listOfWords[]={"test", "puzzle", "watermelon", "tree", "boat", "squirrel"};
+char* listOfWords[]={"test", "puzzle", "watermelon", "tree", "boat", "squirrel", "Miley Cyrus", "America", "Facebook", "twerk", "hashtag", "Bye Felicia", "swerve", "on point", "Rihanna", "North West", "Donald Trump", "Lil' Wayne", "Hellen Keller", "wrecking ball", "Einstein", "Tech Nine", "Queen", "Bohemian", "Rwanda", "Iraq", "Selma", "76ers", "Knicks", "scrub", "Cardinals", "Mariners", "Brewers", "Orioles", "Iggy Azalea", "The Clash", "Katy Perry", "John Legend", "Las Vegas", "Portland", "Milwaukee", "cookie jar", "Goldschlager", "Fireball", "Jagermeister", "bench press", "hangover", "munchies"};
 int listOfWordsLength = sizeof(listOfWords) / sizeof(int);
 char* currentWord = "";
 int currentWordIndex = 0;
@@ -143,7 +143,7 @@ void getNewWord()
   int currentWordLength = strlen(currentWord);
 
   // calculate ideal x-axis positioning based on size of word
-  int xAxisPlacement = (160 - ((currentWordLength * 20) / 2));
+  int xAxisPlacement = (160 - ((currentWordLength * 23) / 2));
   
   // Note: Since we are using the TFT shield in the "landscape" orientation,
   // the x and y values (as humans understand them) have been transposed; 
